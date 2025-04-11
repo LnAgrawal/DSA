@@ -43,5 +43,19 @@ public class SinglyLinkedList {
             System.out.println(current.toString());
             current = current.getNext();
         }
+
+    }
+
+    public void reverse(){
+        Node previous = null;
+        Node current = head;
+        Node next = null;
+        while(current !=null){
+            next = current.getNext();
+            current.setNext(previous);
+            previous = current;
+            current = next;
+        }
+        head = previous;
     }
 }

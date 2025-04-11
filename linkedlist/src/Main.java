@@ -12,8 +12,8 @@ public class Main {
 
         System.out.println(listLength(node3));*/
 
-        //SinglyLinkedList list = new SinglyLinkedList();
-        CircularLinkedList list = new CircularLinkedList();
+        SinglyLinkedList list = new SinglyLinkedList();
+        //CircularLinkedList list = new CircularLinkedList();
         list.insertFirst(10);
         list.insertLast(20);
         list.insertFirst(30);
@@ -22,6 +22,8 @@ public class Main {
 
         list.displayList();
 
+        list.reverse();
+        list.displayList();
     }
 
     public static int listLength(Node node){
