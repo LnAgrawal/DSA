@@ -1,5 +1,8 @@
 import java.util.Arrays;
 
+/**
+ * Each element from unsorted section of array to sorted section of an array
+ */
 public class InsertionSort {
     public static int[] insertionSort(int[] a){
 
